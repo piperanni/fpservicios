@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
+import "../app/css/estilos.css";
 
 
 export default function Navbar() {
@@ -12,8 +13,8 @@ export default function Navbar() {
     console.log(menu_activar)
   }
   return (
-    <nav className="w-full min-w-[375px]">
-        <ul className="w-full h-full bg-slate-400 flex flex-col items-center  md:flex-row lg:justify-between p-5 ">
+    <nav className="w-full min-w-[375px] absolute text-white encabezado">
+        <ul className="w-full h-full flex flex-col items-center  md:flex-row lg:justify-between p-5 ">
          <div className=" w-full flex justify-between">
               <div className="flex gap-4 m-auto md:m-0">
               <h1>LOGO</h1>
@@ -25,9 +26,9 @@ export default function Navbar() {
           <div className={menu_activar?"hidden md:contents w-full ":"w-full md:w-auto"}>
             <ul className="md:flex md:gap-2 text-center md:text-start">
               <li className=" border-b-2 md:border-b-0"><Link href="/" >INICIO</Link></li>
-              <li className=" border-b-2 md:border-b-0"><Link href="/"> SERVICIOS</Link></li>
-              <li className=" border-b-2 md:border-b-0"><Link href="/">CONTACTO</Link></li>
-              <li className=" border-b-2 md:border-b-0"><Link href="/">NOSOTROS</Link></li>
+              <li className=" border-b-2 md:border-b-0"><Link href="#serviciosid"> SERVICIOS</Link></li>
+              <li className=" border-b-2 md:border-b-0"><Link href="#seccionFormulario">CONTACTO</Link></li>
+              <li className=" border-b-2 md:border-b-0"><Link href="#nosotrosid">NOSOTROS</Link></li>
             </ul>
           </div>
           
