@@ -71,7 +71,7 @@ export default function SlideCorrecto({ listaImagenes }) {
   }, [isPaused]);
 
   return (
-    <div className="seccionSlider md:col-start-3 md:col-end-8">
+    <div className="seccionSlider w-full md:w-[70%]">
       <div
         className="contenedorPrincipal"
         onMouseEnter={() => setIsPaused(true)}

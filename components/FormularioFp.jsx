@@ -3,7 +3,7 @@ import contacto from "../app/images/jeshoots-com-pUAM5hPaCRI-unsplash.jpg";
 
 export default function formularioFp() {
   return (
-    <section id="seccionFormulario"className="grid grid-cols-1 md:grid-cols-7">
+    <section id="seccionFormulario"className="grid grid-cols-1 md:grid-cols-7 mt-5">
       <div className="md:col-start-1 md:col-end-5 flex ">
         <Image src={contacto} className="w-full"></Image>
       </div>

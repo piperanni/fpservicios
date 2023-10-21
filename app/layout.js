@@ -12,9 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className="flex flex-col items-center h-full">{children}
-      <script>
-        AOS.init();
-      </script>
+      
       </body>
     </html>
   )
