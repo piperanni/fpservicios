@@ -71,9 +71,9 @@ export default function SlideCorrecto({ listaImagenes }) {
   }, [isPaused]);
 
   return (
-    <div className="seccionSlider w-full md:w-[70%]">
+    <div className="slide-right h-full seccionSlider w-full md:w-[65%]">
       <div
-        className="contenedorPrincipal"
+        className="contenedorPrincipal h-full"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
@@ -81,14 +81,15 @@ export default function SlideCorrecto({ listaImagenes }) {
           {listaImagenes.map((item) => {
             return (
               <div className="slideshow" key={item.id}>
+                <div className="w-full h-full ">
                 <Image
                   src={item.imgUrl}
-                  className="imagen"
+                  className="h-full w-full"
                   alt={item.desc}
                   priority={true}
-                
-                  
-                ></Image>
+                                 
+                />
+                </div>
                 <div className="contendorParrafo">
                   <p>{item.desc}</p>
                 </div>

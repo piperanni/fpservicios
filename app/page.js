@@ -5,6 +5,7 @@ import Navbar from '@/components/header/Navbar'
 import "./css/sliderShow.css"
 import "./css/estilos.css"
 import "./css/nosotros.css"
+import "./css/scrollAnimation.css"
 
 export default function Home() {
   return (

@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function Nosotros() {
   return (
-    <article id="nosotrosid" className=" mt-5 text-white  flex flex-col justify-center items-center bgNosotros  h-[45vh]">
+    <article id="nosotrosid" className="shadow-xl text-white  flex flex-col justify-center items-center bgNosotros h-[65vh]  md:h-[50vh]">
 
          <div className="flex flex-col w-full h-full bgOscuro justify-center items-center">
           <div className='md:w-[70%] w-full'>
-          <h1 className="text-lg md:text-3xl font-extrabold text-center mb-5 ">
+          <h1 className="text-lg md:text-3xl font-extrabold text-center ">
             SOBRE NOSOTROS ...
           </h1>
           <p className="text-base font-normal md:font-semibold px-5 md:p-0">
